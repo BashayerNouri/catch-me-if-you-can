@@ -72,7 +72,6 @@ def play_again():
             print("Please enter \"yes\" or \"y\" or \"no\" or \"n\" ")
             time.sleep(1)
 
-
 def main():
 
     os.system("cls")
