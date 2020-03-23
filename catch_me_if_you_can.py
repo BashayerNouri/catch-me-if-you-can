@@ -3,7 +3,6 @@ import os
 import random
 import time
 
-
 picture = ['''
                 +---+
                 |   |
@@ -20,7 +19,6 @@ picture = ['''
                 |   |
                | |  |
               =========''']
-
 
 
 class Score:
@@ -41,7 +39,6 @@ class Score:
     def __str__(self):
         return "\n+---------------+\nName: %s \nLevel: %s \nScore: %s \n+---------------+" % (self.name, self.level_selection, self.get_score())
 
-
 def get_random_word():
     file = open("wordlist.txt", "r")
     words = file.readlines() 
@@ -52,9 +49,7 @@ def get_random_word():
     file.close()
     return random_word
 
-
 random_word = get_random_word()
-
 
 def weclcome_message():
     messsages = ["\nWelcome to Catch Me If You Can","Get ready","Starting the game...","Selecting a word..."]
@@ -63,14 +58,12 @@ def weclcome_message():
         print (colored(messsage, 'yellow'))
         time.sleep(1.3)
 
-
 def play_again():
     print(colored("\nWould you like to play again?", 'cyan'))
     time.sleep(1)
 
     while True:
         answer = input(colored("If yes enter \"yes\" or \"y\". If no enter \"no\" or \"n\" ", 'cyan')).lower()
-
         if answer == "y" or answer == "yes":
             main()
         elif answer == "n" or answer == "no":
@@ -103,7 +96,6 @@ def main():
     print(colored("\t3. Expert (6 lives)", 'red'))
     time.sleep(1)
 
-    
     while selection == False:
         level_selection = input(colored("\nSelect A Level: ", 'cyan'))  
         try:
@@ -122,16 +114,12 @@ def main():
         except ValueError:
                 print(colored("You didn't enter a number!", 'yellow'))
 
-
     name = input(colored("\nEnter a name, nickname or team name: ", 'cyan'))
-
 
     weclcome_message()
 
-
     print("\nThe word contains", len(random_word), 'letters. \n')
     print(len(random_word) * colored(" _", 'green'))
-
     
     while guessed == False and tries > 0:
             print(colored("\nYou have %s tries." % str(tries), 'magenta'))
@@ -158,7 +146,6 @@ def main():
                     letters_guessed.append(guess)
                     print(colored("\nLetters Guessed: %s\n" % letters_guessed, 'red'))
 
-
             # Case 2: if the player enters a full word.
             elif len(guess) == len(random_word):
                 if guess == random_word:
@@ -170,7 +157,6 @@ def main():
                 else:
                     # E.g.: The word is bowling but he/she enters'bowllng'.
                     print(colored("\nSomething is not part of the word, try again.\n", 'yellow'))
-
 
             # Case 3: if the player enters a full word but it's not the exact word. More of less letters.
             # E.g.: The word is bowling but he/she enters 'bowl' or 'bo' or 'bowlingg'.
@@ -201,7 +187,5 @@ def main():
     play_again()
 
 
-
 if __name__ == '__main__':
     main()
-
