@@ -2,25 +2,25 @@
 
 -   [About the Project](https://github.com/bashayernouri/catch-me-if-you-can#-about-the-project)
 -   [Built With](https://github.com/bashayernouri/catch-me-if-you-can#-built-with)
--   [Installation of Python3](https://github.com/bashayernouri/catch-me-if-you-can#-installation-of-python-3)
-    -   [Mac OS](https://github.com/bashayernouri/catch-me-if-you-can#-mac-os)
-            - [What Is Homebrew?](https://github.com/bashayernouri/catch-me-if-you-can#-what-is-homebrew)
-            - [Installation of Homebrew?](https://github.com/bashayernouri/catch-me-if-you-can#-installation-of-homebrew)
-            - [Installation of Python3](https://github.com/bashayernouri/catch-me-if-you-can#-installation-of-python-mac)
-    -   [Windows OS](https://github.com/bashayernouri/catch-me-if-you-can#-windows-os)
-            - [What Is Chocolatey?](https://github.com/bashayernouri/catch-me-if-you-can#-what-is-chocolatey)
-            - [Installation of Chocolatey?](https://github.com/bashayernouri/catch-me-if-you-can#-installation-of-chocolatey)
-            - [Installation of Python3](https://github.com/bashayernouri/catch-me-if-you-can#-installation-of-python-windows)
-    -   [Linux OS](https://github.com/bashayernouri/catch-me-if-you-can#-linux-os)
-            - [Installation of Python](https://github.com/bashayernouri/catch-me-if-you-can#-installation-of-python-linux)
--   [Getting Started](https://github.com/bashayernouri/catch-me-if-you-can#-getting-started)
-    -   [How to Fork the Project](https://github.com/bashayernouri/catch-me-if-you-can#-how-to-fork-the-project)
-    -   [How to Clone the Project](https://github.com/bashayernouri/catch-me-if-you-can#-how-to-clone-the-project)
-    -   [How to Run the Projec](https://github.com/bashayernouri/catch-me-if-you-can#-how-to-run-the-project)
+-   [Installation of Python3](https://github.com/bashayernouri/catch-me-if-you-can#-installation-of-python3)
+    -   [Mac OS](https://github.com/bashayernouri/catch-me-if-you-can#mac-os)
+            - [What Is Homebrew?](https://github.com/bashayernouri/catch-me-if-you-can#what-is--homebrew)
+            - [Installation of Homebrew?](https://github.com/bashayernouri/catch-me-if-you-can#installation-of--homebrew)
+            - [Installation of Python3](https://github.com/bashayernouri/catch-me-if-you-can#installation-of--python-3)
+    -   [Windows OS](https://github.com/bashayernouri/catch-me-if-you-can#windows-os)
+            - [What Is Chocolatey?](https://github.com/bashayernouri/catch-me-if-you-can#what-is--chocolatey)
+            - [Installation of Chocolatey?](https://github.com/bashayernouri/catch-me-if-you-can#installation-of--chocolatey)
+            - [Installation of Python3](https://github.com/bashayernouri/catch-me-if-you-can#installation-of--python-3-1)
+    -   [Linux OS](https://github.com/bashayernouri/catch-me-if-you-can#linux-os)
+            - [Installation of Python](https://github.com/bashayernouri/catch-me-if-you-can#installation-of--python-3-2)
+-   [Getting Started](https://github.com/bashayernouri/catch-me-if-you-can#getting-started)
+    -   [How to Fork the Project](https://github.com/bashayernouri/catch-me-if-you-can#how-to-fork-the-project)
+    -   [How to Clone the Project](https://github.com/bashayernouri/catch-me-if-you-can#how-to-clone-the-project)
+    -   [How to Run the Projec](https://github.com/bashayernouri/catch-me-if-you-can#how-to-run-the-project)
 
 
 
-## [](https://github.com/bashayernouri/catch-me-if-you-can#-about-the-project) About the Project
+## About the Project
 
 _**"Catch Me If You Can"**_ famous by the name _**"Hangman"**_, It is a classic guessing game for two or more players. In this project, one player needs to think of a word and the other tries to guess it by suggesting letters within a certain number of guesses.
 
