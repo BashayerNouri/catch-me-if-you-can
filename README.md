@@ -1,18 +1,12 @@
-﻿## Table of Contents
+﻿
+## Table of Contents
 
 -   [About the Project](https://github.com/bashayernouri/catch-me-if-you-can#about-the-project)
 -   [Built With](https://github.com/bashayernouri/catch-me-if-you-can#-built-with)
 -   [Installation of Python3](https://github.com/bashayernouri/catch-me-if-you-can#-installation-of-python3)
     -   [Mac OS](https://github.com/bashayernouri/catch-me-if-you-can#mac-os)
-            - [What Is Homebrew?](https://github.com/bashayernouri/catch-me-if-you-can#what-is--homebrew)
-            - [Installation of Homebrew?](https://github.com/bashayernouri/catch-me-if-you-can#installation-of--homebrew)
-            - [Installation of Python3](https://github.com/bashayernouri/catch-me-if-you-can#installation-of--python-3)
     -   [Windows OS](https://github.com/bashayernouri/catch-me-if-you-can#windows-os)
-            - [What Is Chocolatey?](https://github.com/bashayernouri/catch-me-if-you-can#what-is--chocolatey)
-            - [Installation of Chocolatey?](https://github.com/bashayernouri/catch-me-if-you-can#installation-of--chocolatey)
-            - [Installation of Python3](https://github.com/bashayernouri/catch-me-if-you-can#installation-of--python-3-1)
     -   [Linux OS](https://github.com/bashayernouri/catch-me-if-you-can#linux-os)
-            - [Installation of Python](https://github.com/bashayernouri/catch-me-if-you-can#installation-of--python-3-2)
 -   [Getting Started](https://github.com/bashayernouri/catch-me-if-you-can#getting-started)
     -   [How to Fork the Project](https://github.com/bashayernouri/catch-me-if-you-can#how-to-fork-the-project)
     -   [How to Clone the Project](https://github.com/bashayernouri/catch-me-if-you-can#how-to-clone-the-project)
@@ -52,7 +46,6 @@ If you don't already have  `Homebrew`  installed, open your macOS Terminal and p
 
 ```
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
 ```
 ----------
 
