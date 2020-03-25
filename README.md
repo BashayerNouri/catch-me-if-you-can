@@ -1,6 +1,6 @@
 ﻿## Table of Contents
 
--   [About the Project](https://github.com/bashayernouri/catch-me-if-you-can#-about-the-project)
+-   [About the Project](https://github.com/bashayernouri/catch-me-if-you-can#about-the-project)
 -   [Built With](https://github.com/bashayernouri/catch-me-if-you-can#-built-with)
 -   [Installation of Python3](https://github.com/bashayernouri/catch-me-if-you-can#-installation-of-python3)
     -   [Mac OS](https://github.com/bashayernouri/catch-me-if-you-can#mac-os)
@@ -24,7 +24,7 @@
 
 _**"Catch Me If You Can"**_ famous by the name _**"Hangman"**_, It is a classic guessing game for two or more players. In this project, one player needs to think of a word and the other tries to guess it by suggesting letters within a certain number of guesses.
 
-## [](https://github.com/bashayernouri/catch-me-if-you-can#built-with) Built With
+## Built With
 
 In this section, we will explain what you will be using during this project:
 -   `Python:`  a programming language for developing the game.
@@ -32,13 +32,13 @@ In this section, we will explain what you will be using during this project:
 -   `Command Prompt/Terminal:`  basic usage of the command-line commands.
 -   `Git:`  a version-control system for tracking the changes we're making to the code.
 
-## [](https://github.com/bashayernouri/catch-me-if-you-can#installation-of-python-3) Installation of Python3
+## Installation of Python3
 
 Now, in the following sections, you will learn how to install  `python 3`  in your system.  `Python 3`  is the newest version of the Python programming language.
 
-## [](https://github.com/bashayernouri/catch-me-if-you-can#mac-os)Mac OS
+## Mac OS
 
-### [](https://github.com/bashayernouri/catch-me-if-you-can#what-is-homebrew)What is  `Homebrew`?
+### What is  `Homebrew`?
 
 `Homebrew`  is an open-source software package management system that simplifies the installation of software on Apple's macOS operating system.
 
@@ -46,7 +46,7 @@ For more informations,  [click here](https://brew.sh/).
 
 ----------
 
-### [](https://github.com/bashayernouri/catch-me-if-you-can#installation-of-homebrew)Installation of  `Homebrew`
+### Installation of  `Homebrew`
 
 If you don't already have  `Homebrew`  installed, open your macOS Terminal and paste the following command.
 
@@ -56,7 +56,7 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 ```
 ----------
 
-### [](https://github.com/bashayernouri/catch-me-if-you-can#installation-of-python-mac)Installation of  `Python 3`
+### Installation of  `Python 3`
 
 If you don't already have  `Python 3`  installed, paste the following command on your macOS Terminal.
 
@@ -65,7 +65,7 @@ $ brew install python3
 ```
 ## Windows OS
 
-### [](https://github.com/bashayernouri/catch-me-if-you-can#what-is-chocolatey)What is  `Chocolatey`?
+### What is  `Chocolatey`?
 
 `Chocolatey`  is a command line application installer for Windows. Unlike manual installations,  `Chocolatey`  adds, updates, and uninstalls programs in the background requiring very little user interaction
 
@@ -73,7 +73,7 @@ For more informations,  [click here](https://chocolatey.org/about).
 
 ----------
 
-### [](https://github.com/bashayernouri/catch-me-if-you-can#installation-of--chocolatey)Installation of  `Chocolatey`
+### Installation of  `Chocolatey`
 
 If you don't already have  `Chocolatey`  installed, you need to do the following:
 
@@ -94,7 +94,7 @@ For more informations,  [click here](https://chocolatey.org/docs/installation).
 
 ----------
 
-### [](https://github.com/bashayernouri/catch-me-if-you-can#installation-of-python-windows)Installation of  `Python 3`
+### Installation of  `Python 3`
 
 If you don't already have  `Python 3`  installed, you need to do the following.
 
@@ -110,7 +110,7 @@ If you don't already have  `Python 3`  installed, you need to do the following.
 
 ## Linux OS
 
-### [](https://github.com/bashayernouri/catch-me-if-you-can#installation-of-python-linux)Installation of  `Python 3`
+### Installation of  `Python 3`
 
 If you don't already have  `Python 3`  installed, and if you are using Ubuntu 16.10 or newer, then you can easily install  `Python 3.6`  with the following commands:
 
@@ -118,12 +118,12 @@ If you don't already have  `Python 3`  installed, and if you are using Ubuntu 16
 $ sudo apt-get update
 $ sudo apt-get install python3.6
 ```
-## [](https://github.com/bashayernouri/catch-me-if-you-can#getting-started)Getting Started
+## Getting Started
 
 
 Let's start setting up the project by following these steps:
 
-### [](https://github.com/bashayernouri/catch-me-if-you-can#how-to-fork-the-project)**How to fork the project?**
+### **How to fork the project?**
 
 [![Fork button](https://camo.githubusercontent.com/635604a1a835f806b09454fecb9af172a52eea77/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f656e74657270726973652f322e31332f6173736574732f696d616765732f68656c702f7265706f7369746f72792f666f726b5f627574746f6e2e6a7067)](https://camo.githubusercontent.com/635604a1a835f806b09454fecb9af172a52eea77/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f656e74657270726973652f322e31332f6173736574732f696d616765732f68656c702f7265706f7369746f72792f666f726b5f627574746f6e2e6a7067)
 
@@ -131,7 +131,7 @@ Go into the starter repo  [github](https://github.com/bashayernouri/). On the ri
 
 For more informations  [click here](https://help.github.com/en/enterprise/2.13/user/articles/fork-a-repo#fork-an-example-repository).
 
-### [](https://github.com/bashayernouri/catch-me-if-you-can#how-to-clone-the-project)**How to clone the project?**
+### **How to clone the project?**
 
 1.  Open your command-line
     
@@ -162,7 +162,7 @@ For more informations  [click here](https://help.github.com/en/github/creating-c
 
 After forking and cloning the project all you need to do now is to go into the project directory and run it,  **read below**.
 
-### [](https://github.com/bashayernouri/catch-me-if-you-can#how-to-run-the-project)**How to run the project?**
+### **How to run the project?**
 
 -   To run your project and see the changes you make, use the following commands:
 
