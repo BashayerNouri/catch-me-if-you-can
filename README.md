@@ -1,19 +1,4 @@
 ﻿
-## Table of Contents
-
--   [About the Project](https://github.com/bashayernouri/catch-me-if-you-can#about-the-project)
--   [Built With](https://github.com/bashayernouri/catch-me-if-you-can#-built-with)
--   [Installation of Python3](https://github.com/bashayernouri/catch-me-if-you-can#-installation-of-python3)
-    -   [Mac OS](https://github.com/bashayernouri/catch-me-if-you-can#mac-os)
-    -   [Windows OS](https://github.com/bashayernouri/catch-me-if-you-can#windows-os)
-    -   [Linux OS](https://github.com/bashayernouri/catch-me-if-you-can#linux-os)
--   [Getting Started](https://github.com/bashayernouri/catch-me-if-you-can#getting-started)
-    -   [How to Fork the Project](https://github.com/bashayernouri/catch-me-if-you-can#how-to-fork-the-project)
-    -   [How to Clone the Project](https://github.com/bashayernouri/catch-me-if-you-can#how-to-clone-the-project)
-    -   [How to Run the Projec](https://github.com/bashayernouri/catch-me-if-you-can#how-to-run-the-project)
-
-
-
 ## About the Project
 
 _**"Catch Me If You Can"**_ famous by the name _**"Hangman"**_, It is a classic guessing game for two or more players. In this project, one player needs to think of a word and the other tries to guess it by suggesting letters within a certain number of guesses.
