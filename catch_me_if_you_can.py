@@ -44,7 +44,6 @@ def get_random_word():
     words = file.readlines() 
     random_word = random.choice(words)
     random_word = random_word.strip("\n")
-    random_word = random_word.strip("\r")
     random_word = random_word.lower()
     file.close()
     return random_word
@@ -121,7 +120,7 @@ def main():
     print(len(random_word) * colored(" _", 'green'))
     
     while guessed == False and tries > 0:
-            print(colored("\nYou have %s tries." % str(tries), 'magenta'))
+            print(colored("\nYou have %s tries." % tries, 'magenta'))
             guess = input("\nEnter one letter or the full word: ").lower()
 
             # Case 1: if the player enters a single letter.
@@ -156,6 +155,7 @@ def main():
                 else:
                     # E.g.: The word is bowling but he/she enters'bowllng'.
                     print(colored("\nSomething is not part of the word, try again.\n", 'yellow'))
+                    tries -=1
 
             # Case 3: if the player enters a full word but it's not the exact word. More of less letters.
             # E.g.: The word is bowling but he/she enters 'bowl' or 'bo' or 'bowlingg'.
