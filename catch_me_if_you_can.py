@@ -24,17 +24,17 @@ picture = ['''
 class Score:
     def __init__(self, level_selection, name):
         self.level_selection = level_selection
-        self.name = name
-        self.bonus = 5
         self.word = len(random_word) 
+        self.bonus = 5
+        self.name = name
 
     def get_score(self):
         if self.level_selection == 1:
-            return (self.level_selection * 10 + self.bonus + self.word)
+            return (self.level_selection) * (10 + self.word + self.bonus)
         elif self.level_selection == 2:
-            return (self.level_selection * 20 + self.bonus + self.word)
+            return (self.level_selection) * (20 + self.word + self.bonus)
         else:
-            return (self.level_selection * 30 + self.bonus + self.word)
+            return (self.level_selection) * (30 + self.word + self.bonus)
 
     def __str__(self):
         return "\n+---------------+\nName: %s \nLevel: %s \nScore: %s \n+---------------+" % (self.name, self.level_selection, self.get_score())
