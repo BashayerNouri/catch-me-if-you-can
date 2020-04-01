@@ -77,9 +77,9 @@ def main():
     os.system("cls")
 
     level = { 
-    'beginner': {'tries': 10},
-    'immediate': {'tries': 8},
-    'expert': {'tries': 6}
+    "easy": 10,
+    "intermediate": 6,
+    "difficult":  2,
     }
 
     letters_guessed = []
@@ -88,11 +88,11 @@ def main():
 
     print("\nThere are multiple difficulty settings shown below:")
     time.sleep(1)
-    print(colored("\t1. Beginner (10 lives)", 'green'))
+    print(colored("\t1. Easy (10 attempts)", 'green'))
     time.sleep(1)
-    print(colored("\t2. Intermediate (8 lives)", 'yellow'))
+    print(colored("\t2. Intermediate (6 attempts)", 'yellow'))
     time.sleep(1)
-    print(colored("\t3. Expert (6 lives)", 'red'))
+    print(colored("\t3. Difficult (2 attempts)", 'red'))
     time.sleep(1)
 
     while selection == False:
@@ -100,13 +100,13 @@ def main():
         try:
             level_selection = int(level_selection)
             if level_selection == 1:
-                tries = level['beginner']['tries']
+                tries = level['easy']
                 selection = True
             elif level_selection == 2:
-                tries = level['immediate']['tries']
+                tries = level['intermediate']
                 selection = True
             elif level_selection == 3:
-                 tries = level['expert']['tries']
+                 tries = level['difficult']
                  selection = True
             else:
                 print(colored("Please select a number from 1 to 3...", 'yellow'))
