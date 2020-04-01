@@ -1,5 +1,3 @@
-from termcolor import colored
-import os
 import random
 import time
 
@@ -21,29 +19,13 @@ picture = ['''
               =========''']
 
 
-class Score:
-    def __init__(self, level_selection, name):
-        self.level_selection = level_selection
-        self.name = name
-        self.bonus = 5
-        self.word = len(random_word) 
-
-    def get_score(self):
-        if self.level_selection == 1:
-            return (self.level_selection * 10 + self.bonus + self.word)
-        elif self.level_selection == 2:
-            return (self.level_selection * 20 + self.bonus + self.word)
-        else:
-            return (self.level_selection * 30 + self.bonus + self.word)
-
-    def __str__(self):
-        return "\n+---------------+\nName: %s \nLevel: %s \nScore: %s \n+---------------+" % (self.name, self.level_selection, self.get_score())
 
 def get_random_word():
     file = open("wordlist.txt", "r")
     words = file.readlines() 
     random_word = random.choice(words)
     random_word = random_word.strip("\n")
+    random_word = random_word.strip("\r")
     random_word = random_word.lower()
     file.close()
     return random_word
@@ -52,17 +34,16 @@ random_word = get_random_word()
 
 def weclcome_message():
     messsages = ["\nWelcome to Catch Me If You Can","Get ready","Starting the game...","Selecting a word..."]
-    os.system("cls")
     for messsage in messsages:
-        print (colored(messsage, 'yellow'))
+        print (messsage)
         time.sleep(1.3)
 
 def play_again():
-    print(colored("\nWould you like to play again?", 'cyan'))
+    print("\nWould you like to play again?")
     time.sleep(1)
 
     while True:
-        answer = input(colored("If yes enter \"yes\" or \"y\". If no enter \"no\" or \"n\" ", 'cyan')).lower()
+        answer = input("If yes enter \"yes\" or \"y\". If no enter \"no\" or \"n\" ").lower()
         if answer == "y" or answer == "yes":
             main()
         elif answer == "n" or answer == "no":
@@ -74,29 +55,28 @@ def play_again():
 
 def main():
 
-    os.system("cls")
-
     level = { 
     "easy": 10,
     "intermediate": 6,
     "difficult":  2,
     }
 
+    selection = False
     letters_guessed = []
     guessed = False
-    selection = False
+    
 
     print("\nThere are multiple difficulty settings shown below:")
     time.sleep(1)
-    print(colored("\t1. Easy (10 attempts)", 'green'))
+    print("\t1. Easy (10 attempts)")
     time.sleep(1)
-    print(colored("\t2. Intermediate (6 attempts)", 'yellow'))
+    print("\t2. Intermediate (6 attempts)")
     time.sleep(1)
-    print(colored("\t3. Difficult (2 attempts)", 'red'))
+    print("\t3. Difficult (2 attempts)")
     time.sleep(1)
 
     while selection == False:
-        level_selection = input(colored("\nSelect A Level: ", 'cyan'))  
+        level_selection = input("\nSelect A Level: ")
         try:
             level_selection = int(level_selection)
             if level_selection == 1:
@@ -109,58 +89,49 @@ def main():
                  tries = level['difficult']
                  selection = True
             else:
-                print(colored("Please select a number from 1 to 3...", 'yellow'))
+                print("Please select a number from 1 to 3...")
         except ValueError:
-                print(colored("You didn't enter a number!", 'yellow'))
-
-    name = input(colored("\nEnter a name, nickname or team name: ", 'cyan'))
+                print("You didn't enter a number!")
 
     weclcome_message()
 
     print("\nThe word contains", len(random_word), 'letters. \n')
-    print(len(random_word) * colored(" _", 'green'))
+    print(len(random_word) * (" _"))
     
     while guessed == False and tries > 0:
-            print(colored("\nYou have %s tries." % tries, 'magenta'))
+            print("\nYou have %s tries." % tries)
             guess = input("\nEnter one letter or the full word: ").lower()
 
-            # Case 1: if the player enters a single letter.
             if len(guess) == 1:
                 if not guess.isalpha():
-                    print(colored("\n\'%s\' is not a letter, enter a letter!\n" % guess, 'yellow'))
-                    print(colored("\nLetters Guessed: %s\n" % letters_guessed, 'red'))
+                    print("\n\'%s\' is not a letter, enter a letter!\n" % guess)
+                    print("\nLetters Guessed: %s\n" % letters_guessed)
 
                 elif guess in letters_guessed:
-                    print(colored("\n\'%s\' has been guessed before, try another letter.\n" % guess, 'yellow'))
-                    print(colored("\nLetters Guessed: %s\n" % letters_guessed, 'red'))
+                    print("\n\'%s\' has been guessed before, try another letter.\n" % guess)
+                    print("\nLetters Guessed: %s\n" % letters_guessed)
 
                 elif guess not in random_word:
-                    print(colored("\n\'%s\' is not part of the word, try another letter.\n" % guess, 'yellow'))
+                    print("\n\'%s\' is not part of the word, try another letter.\n" % guess)
                     letters_guessed.append(guess)
                     tries -=1
-                    print(colored("\nLetters Guessed: %s\n" % letters_guessed, 'red'))
+                    print("\nLetters Guessed: %s\n" % letters_guessed)
 
                 elif guess in random_word:
-                    print(colored("\nWell done, that letter exists in the word!\n", 'yellow'))
+                    print("\nWell done, that letter exists in the word!\n")
                     letters_guessed.append(guess)
-                    print(colored("\nLetters Guessed: %s\n" % letters_guessed, 'red'))
+                    print("\nLetters Guessed: %s\n" % letters_guessed)
 
-            # Case 2: if the player enters a full word.
             elif len(guess) == len(random_word):
                 if guess == random_word:
-                    print(colored(picture[1], 'green'))
+                    print(picture[1])
                     print("\nCongratulations! the word is \"%s\"" % random_word)
-                    print(Score(level_selection, name))
                     guessed = True
 
                 else:
-                    # E.g.: The word is bowling but he/she enters'bowllng'.
-                    print(colored("\nSomething is not part of the word, try again.\n", 'yellow'))
+                    print("\nSomething is not part of the word, try again.\n")
                     tries -=1
 
-            # Case 3: if the player enters a full word but it's not the exact word. More of less letters.
-            # E.g.: The word is bowling but he/she enters 'bowl' or 'bo' or 'bowlingg'.
-            # They should enter 'bowling' or only one letter each turn.
             else:
                 print("\n\"%s\" lenght does not equal to \"%s\" letters, try another!\n" % (guess,len(random_word)))
 
@@ -172,20 +143,18 @@ def main():
                         status += letter
                     else:
                         status += ' _'
-                print(colored(status, 'green'))
+                print(status)
 
             if status == random_word:
-                print(colored(picture[1], 'green'))
+                print(picture[1])
                 print("\nCongratulations! the word is \"%s\"" % random_word)
-                print(Score(level_selection, name))
                 guessed = True
 
             elif tries == 0:
-                print(colored(picture[0], 'red'))
+                print(picture[0])
                 print("\nOh no! You have run out of guesses, better luck next time! The word is \"%s\"" % random_word)
 
     play_again()
-
 
 if __name__ == '__main__':
     main()
