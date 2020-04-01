@@ -66,9 +66,10 @@ def play_again():
         if answer == "y" or answer == "yes":
             main()
         elif answer == "n" or answer == "no":
-            break
+        	print("\nGoodbye. See you next time!")
+        	break
         else:
-            print("Please enter \"yes\" or \"y\" or \"no\" or \"n\" ")
+            print("Please enter \"yes\" or \"y\". \"no\" or \"n\" ")
             time.sleep(1)
 
 def main():
